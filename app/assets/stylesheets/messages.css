@@ -16,12 +16,16 @@
 .side-header{
   height: 100px;
   padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .side-body{
   height: calc(100vh - 100px);
   background-color: #2F3E51;
   padding: 0 20px;
+  overflow: scroll;
 }
 
 .chat-header{
@@ -39,4 +43,30 @@
   height: 90px;
   background-color: #dddddd;
   padding: 20px 40px;
+}
+
+.header-name a{
+  font-size: 16px;
+  color: #FAFAFA;
+  text-decoration: none;
+}
+
+.create-room {
+  font-size: 10px;
+}
+
+.create-room a{
+  border: 1px solid lightblue;
+  padding: 14px;
+  color: deepskyblue;
+  text-decoration: none;
+}
+
+.chatroom{
+  padding: 20px 0 40px;
+}
+
+.chatroom a{
+  color: white;
+  text-decoration: none;
 }
