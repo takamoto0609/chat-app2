@@ -2,45 +2,19 @@
   display: flex;
 }
 
-.side-ber{
+.side-bar{
   width: 300px;
   height: 100vh;
   background-color: #253141;
 }
 
-.chat{
-  width: calc(100vw - 300px);
-  background-color: #ffffff;
-}
-
-.side-header{
+.side-bar-header{
   height: 100px;
   padding: 0 20px;
+  background-color: #253141;
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-
-.side-body{
-  height: calc(100vh - 100px);
-  background-color: #2F3E51;
-  padding: 0 20px;
-  overflow: scroll;
-}
-
-.chat-header{
-  height: 100px;
-  padding: 0 40px;
-  display: flex;
-  justify-content: space-between;
-}
-
-.chat-body{
-  height: calc(100% - 190px);
-  background-color: #fafafa;
-  padding-top: 46px 40px 0 40px;
-  overflow: scroll;
-  box-sizing: border-box;
 }
 
 .header-name a{
@@ -60,57 +34,86 @@
   text-decoration: none;
 }
 
-.chatroom{
+.rooms{
+  height: calc(100vh - 100px);
+  background-color: #2F3E51;
+  padding: 0 20px;
+  overflow: scroll;
+}
+
+.room {
   padding: 20px 0 40px;
 }
 
-.chatroom a{
+.room a{
   color: white;
   text-decoration: none;
 }
-.chatroom-name{
+
+.chat{
+  width: calc(100% - 300px);
+  background-color: #ffffff;
+}
+
+.chat-header{
+  height: 100px;
+  padding: 0 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-title {
   font-size: 24px;
   color: #333;
   margin-top: 36px;
 }
 
-.chat-finish{
+.header-btn{
   margin-top: 40px;
 }
 
-.chat-finish a{
+.header-btn a{
   padding: 20px;
   border: 1px solid darkred;
   color: darkred;
   text-decoration: none;
 }
 
-.message{
-  padding: 10px 40px;
-  margin-bottom: 40px;
-  background-color: fuchsia;
+.messages{
+  height: calc(100% - 190px);
+  background-color: #fafafa;
+  padding: 46px 40px 0;
+  overflow: scroll;
+  box-sizing: border-box;
 }
 
-.message-name{
-  font-size: 16px;
-  color: #434a54;
+.message {
+  margin: 10px 0;
 }
 
-.message-text{
-  font-size: 14px;
-  color: #434a54;
-  background-color: darkturquoise;
-}
-
-.date{
-  font-size: 12px;
-  color: #999;
-  margin-left: 10px;
-}
-
-.name-date{
+.upper-message{
   display: flex;
-  background-color: forestgreen;
+}
+
+.message-user {
+  color: #434a54;
+  font-size: 16px;
+}
+
+.message-date {
+  color: #999;
+  font-size: 12px;
+  padding-left: 10px;
+}
+
+.lower-message {
+  margin-top: 10px;
+}
+
+.message-content {
+  color: #434a54;
+  font-size: 14px;
+  margin-bottom: 40px;
 }
 
 .form {
